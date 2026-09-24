@@ -1,0 +1,23 @@
+# Sarkari Naukri — robots.txt
+#
+# data.json currently ships empty (no listings yet — see
+# AUTOMATION-GUIDE.md to start populating it). Until real, verified
+# listings exist, search engines are asked NOT to index the site, so
+# no one finds an empty/near-empty site in search results.
+#
+# WHEN YOU GO LIVE WITH REAL DATA:
+# 1. Replace the block below with:
+#
+#      User-agent: *
+#      Allow: /
+#
+#      Sitemap: https://your-domain-here.example/sitemap.xml
+#
+# 2. Also set "isLive": true in data.json's "meta" block
+#    (this flips the on-page <meta name="robots"> tag to "index, follow").
+# 3. Replace "your-domain-here.example" everywhere (this file,
+#    sitemap.xml, and the "baseUrl" field in data.json) with your
+#    real domain.
+
+User-agent: *
+Disallow: /

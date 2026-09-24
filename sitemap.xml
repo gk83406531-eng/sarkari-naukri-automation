@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sarkari Naukri — sitemap.xml
+
+  Replace "https://your-domain-here.example" below with your real
+  domain everywhere in this file once you go live (see robots.txt).
+  Individual job/result/admit-card detail pages are not listed here
+  because sample data changes constantly — once you're adding real
+  listings, add a <url> entry per listing (e.g.
+  https://your-domain-here.example/job/your-real-job-id), or generate
+  this file automatically from the same JSON data block that powers
+  index.html.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://your-domain-here.example/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://your-domain-here.example/jobs</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/ssc</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/railway</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/banking</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/defence</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/state-government</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/teaching</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/jobs/category/other</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/results</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain-here.example/admit-cards</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://your-domain-here.example/answer-keys</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://your-domain-here.example/syllabus</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://your-domain-here.example/admissions</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://your-domain-here.example/important-links</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://your-domain-here.example/about</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://your-domain-here.example/contact</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+</urlset>

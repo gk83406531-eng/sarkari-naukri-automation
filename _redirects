@@ -1,0 +1,7 @@
+# Netlify / Cloudflare Pages redirect rule.
+# This site uses JavaScript client-side routing with clean URLs
+# (e.g. /jobs, /job/some-id). Without this file, refreshing the
+# browser on any page other than "/" would 404, because there is
+# no real file at that path on the server — every path must be
+# served the same index.html so the app's own router can take over.
+/*   /index.html   200

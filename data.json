@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "siteName": "Sarkari Naukri",
+    "siteTagline": "Jobs · Results · Admit Cards",
+    "baseUrl": "https://your-domain-here.example",
+    "contactEmail": "contact@your-domain-here.example",
+    "isLive": false
+  },
+  "categories": [
+    {"slug":"ssc","label":"SSC"},
+    {"slug":"railway","label":"Railway"},
+    {"slug":"banking","label":"Banking"},
+    {"slug":"defence","label":"Defence"},
+    {"slug":"state-government","label":"State Government"},
+    {"slug":"teaching","label":"Teaching"},
+    {"slug":"other","label":"Other"}
+  ],
+  "jobs": [],
+  "results": [],
+  "admitCards": [],
+  "answerKeys": [],
+  "syllabus": [],
+  "admissions": [],
+  "importantLinks": [
+    {"id":"l1","title":"How to fill an online application form","category":"Guides","url":"#"},
+    {"id":"l2","title":"Check your application status","category":"Tools","url":"#"},
+    {"id":"l3","title":"Category-wise reservation & relaxation rules","category":"Guides","url":"#"},
+    {"id":"l4","title":"Exam calendar for the current cycle","category":"Tools","url":"#"},
+    {"id":"l5","title":"Document checklist for verification","category":"Guides","url":"#"},
+    {"id":"l6","title":"Fee payment & refund policy","category":"Guides","url":"#"},
+    {"id":"l7","title":"Regional language exam centres list","category":"Tools","url":"#"},
+    {"id":"l8","title":"Report an issue with a listing","category":"Support","url":"#"}
+  ]
+}

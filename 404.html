@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sarkari Naukri — Government Jobs, Results &amp; Admit Cards</title>
+<meta name="description" id="metaDesc" content="Independent listings of Indian government job notifications, results, admit cards, answer keys, syllabus and admissions — organised by category, updated regularly.">
+<meta name="robots" id="robotsMeta" content="noindex, follow">
+<link rel="canonical" id="canonicalLink" href="https://your-domain-here.example/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sarkari Naukri">
+<meta property="og:title" id="ogTitle" content="Sarkari Naukri — Government Jobs, Results & Admit Cards">
+<meta property="og:description" id="ogDesc" content="Independent listings of Indian government job notifications, results, admit cards, answer keys, syllabus and admissions.">
+<meta property="og:url" id="ogUrl" content="https://your-domain-here.example/">
+<meta name="theme-color" content="#12233B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   SARKARI NAUKRI — design tokens
+   ============================================================ */
+:root{
+  --ink:#12233B;
+  --ink-2:#1C3A5E;
+  --paper:#EEF1EC;
+  --panel:#FFFFFF;
+  --accent:#CC8A2C;
+  --accent-deep:#A66E1E;
+  --open:#2F6F4E;
+  --open-bg:#E4EEE8;
+  --closing:#A63D2F;
+  --closing-bg:#F5E5E1;
+  --closed-bg:#E7E7E3;
+  --closed-fg:#6B6F66;
+  --line:#DADFD6;
+  --text:#182119;
+  --text-mute:#57625B;
+  --radius:10px;
+  --maxw:1180px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#0B1624; --ink-2:#122238; --paper:#111815; --panel:#182019;
+    --accent:#E3A44A; --accent-deep:#F0B564;
+    --open:#6FBE94; --open-bg:#16281F;
+    --closing:#E08A78; --closing-bg:#301B17;
+    --closed-bg:#20241F; --closed-fg:#8B9088;
+    --line:#2B332C; --text:#EAEDE6; --text-mute:#9CA69B;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#0B1624; --ink-2:#122238; --paper:#111815; --panel:#182019;
+  --accent:#E3A44A; --accent-deep:#F0B564;
+  --open:#6FBE94; --open-bg:#16281F;
+  --closing:#E08A78; --closing-bg:#301B17;
+  --closed-bg:#20241F; --closed-fg:#8B9088;
+  --line:#2B332C; --text:#EAEDE6; --text-mute:#9CA69B;
+}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--text);
+  font-family:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  font-size:15.5px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.disp{font-family:'Roboto Slab',Georgia,serif;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;}
+img{max-width:100%;display:block;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px;}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+:focus-visible{outline:2px solid var(--accent-deep);outline-offset:2px;}
+
+/* ---------- header ---------- */
+header.site{
+  position:sticky;top:0;z-index:40;
+  background:var(--ink);
+  padding-top:env(safe-area-inset-top,0px);
+  border-bottom:3px solid var(--accent);
+}
+.header-row{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 16px;max-width:var(--maxw);margin:0 auto;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;color:#fff;cursor:pointer;background:none;border:none;padding:0;}
+.brand .mark{width:34px;height:34px;flex:none;}
+.brand .word{font-family:'Roboto Slab';font-weight:700;font-size:1.18rem;letter-spacing:0.2px;line-height:1.1;}
+.brand .word small{display:block;font-family:'IBM Plex Sans';font-weight:500;font-size:0.6rem;color:#C9D3DE;letter-spacing:0.4px;}
+.header-search{flex:1 1 auto;display:none;}
+.header-search form{position:relative;}
+.header-search input{
+  width:100%;padding:9px 14px 9px 36px;border-radius:8px;border:1px solid transparent;
+  background:#22385A;color:#fff;font-size:0.92rem;
+}
+.header-search input::placeholder{color:#9FB0C4;}
+.header-search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;opacity:.7;}
+nav.desktop-nav{display:none;}
+.icon-btn{background:none;border:none;color:#fff;width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;}
+.icon-btn:hover{background:#22385A;}
+.icon-btn svg{width:20px;height:20px;}
+
+@media (min-width:860px){
+  .header-search{display:block;max-width:340px;}
+  nav.desktop-nav{display:flex;gap:2px;}
+  .mobile-only{display:none !important;}
+}
+
+/* desktop nav bar (second row) */
+.nav-bar{background:var(--ink-2);display:none;}
+@media (min-width:860px){
+  .nav-bar{display:block;}
+  .nav-bar .wrap{display:flex;gap:2px;align-items:center;}
+  .nav-bar a, .nav-bar button.navlink{
+    color:#D9E2EE;padding:11px 13px;font-size:0.86rem;font-weight:500;border:none;background:none;cursor:pointer;
+    border-bottom:2px solid transparent;
+  }
+  .nav-bar a:hover, .nav-bar a.active, .nav-bar button.navlink:hover{color:#fff;border-bottom-color:var(--accent);}
+  .nav-more{position:relative;}
+  .nav-more-panel{
+    display:none;position:absolute;top:100%;left:0;background:var(--panel);border:1px solid var(--line);
+    border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.18);min-width:190px;padding:6px;z-index:50;
+  }
+  .nav-more:hover .nav-more-panel, .nav-more:focus-within .nav-more-panel{display:block;}
+  .nav-more-panel a{display:block;color:var(--text);padding:8px 10px;border-radius:6px;font-size:0.86rem;border:none;}
+  .nav-more-panel a:hover{background:var(--paper);}
+}
+
+/* ---------- mobile search row ---------- */
+.mobile-search{padding:10px 16px 12px;background:var(--ink);}
+.mobile-search form{position:relative;}
+.mobile-search input{
+  width:100%;padding:11px 14px 11px 38px;border-radius:9px;border:none;background:#22385A;color:#fff;font-size:0.95rem;
+}
+.mobile-search input::placeholder{color:#9FB0C4;}
+.mobile-search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:17px;height:17px;opacity:.75;stroke:#fff;}
+@media (min-width:860px){.mobile-search{display:none;}}
+
+/* ---------- disclaimer bar ---------- */
+.disclaimer-bar{background:var(--closing-bg);border-bottom:1px solid var(--line);}
+.disclaimer-bar .wrap{padding:9px 16px;font-size:0.76rem;color:var(--closing);display:flex;gap:8px;align-items:flex-start;line-height:1.42;}
+.disclaimer-bar strong{color:inherit;}
+.disclaimer-bar .ico{flex:none;margin-top:1px;}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--closing-bg);border-bottom:1px solid var(--line);overflow:hidden;}
+.ticker .wrap{display:flex;align-items:center;gap:10px;padding:8px 16px;font-size:0.82rem;color:var(--closing);font-weight:600;}
+.ticker .dot{width:7px;height:7px;border-radius:50%;background:var(--closing);flex:none;animation:pulse 1.6s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+.ticker span.msg{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/* ---------- mobile menu drawer ---------- */
+.drawer-backdrop{position:fixed;inset:0;background:rgba(10,16,10,.5);z-index:60;display:none;}
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:82%;max-width:320px;background:var(--panel);z-index:61;
+  transform:translateX(100%);transition:transform .25s ease;padding:16px;overflow-y:auto;
+  padding-top:calc(16px + env(safe-area-inset-top,0px));
+  padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));
+}
+.drawer.open{transform:translateX(0);}
+.drawer-backdrop.show{display:block;}
+.drawer h3{margin:14px 0 6px;font-size:0.78rem;text-transform:none;color:var(--text-mute);font-family:'IBM Plex Sans';font-weight:600;}
+.drawer a{display:block;padding:11px 6px;border-bottom:1px solid var(--line);font-size:0.98rem;font-weight:500;}
+.drawer .drawer-top{display:flex;justify-content:space-between;align-items:center;}
+.drawer .close-btn{background:none;border:none;font-size:1.3rem;line-height:1;cursor:pointer;color:var(--text);padding:4px 8px;}
+.theme-row{display:flex;gap:8px;margin-top:14px;}
+.theme-row button{flex:1;padding:9px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--text);font-size:0.85rem;cursor:pointer;}
+.theme-row button.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* ---------- hero ---------- */
+.hero{padding:22px 0 8px;}
+.hero h1{font-size:1.5rem;margin:0 0 4px;color:var(--ink);}
+.hero p{margin:0;color:var(--text-mute);font-size:0.92rem;max-width:52ch;}
+@media (min-width:860px){.hero h1{font-size:1.9rem;}.hero p{font-size:0.98rem;}}
+
+/* ---------- category filter chips ---------- */
+.cat-filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px;}
+.cat-chip{font-size:0.8rem;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:var(--panel);color:var(--text-mute);white-space:nowrap;}
+.cat-chip span{font-weight:500;opacity:.72;margin-left:2px;}
+.cat-chip.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+.cat-chip:hover{border-color:var(--accent);}
+
+/* ---------- section list (ledger rows) ---------- */
+.section-block{margin-top:26px;}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px;border-bottom:2px solid var(--ink);padding-bottom:8px;}
+.section-head h2{font-size:1.08rem;margin:0;color:var(--ink);}
+.section-head .count{font-size:0.72rem;color:var(--text-mute);font-weight:500;font-family:'IBM Plex Sans';margin-left:8px;}
+.section-head .view-all{font-size:0.82rem;font-weight:600;color:var(--accent-deep);white-space:nowrap;padding:4px 2px;}
+.section-head .view-all:hover{text-decoration:underline;}
+
+.ledger{border-top:1px solid var(--line);}
+.row{
+  display:flex;gap:12px;align-items:flex-start;padding:12px 4px;border-bottom:1px solid var(--line);
+  cursor:pointer;position:relative;
+}
+.row:hover{background:rgba(0,0,0,0.02);}
+.row .datebox{
+  flex:none;width:48px;text-align:center;border-radius:8px;background:var(--paper);border:1px solid var(--line);
+  padding:5px 2px;
+}
+.row .datebox .d{font-family:'Roboto Slab';font-weight:700;font-size:1.05rem;color:var(--ink);line-height:1;}
+.row .datebox .m{font-size:0.62rem;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.4px;}
+.row .body{flex:1 1 auto;min-width:0;}
+.row .title{font-weight:600;font-size:0.94rem;color:var(--text);margin:0 0 3px;}
+.row .org{font-size:0.82rem;color:var(--text-mute);margin:0 0 6px;}
+.row .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.tag{font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap;}
+.tag.open{background:var(--open-bg);color:var(--open);}
+.tag.closing{background:var(--closing-bg);color:var(--closing);}
+.tag.closed{background:var(--closed-bg);color:var(--closed-fg);}
+.tag.plain{background:var(--paper);color:var(--text-mute);border:1px solid var(--line);}
+.tag.sample{background:transparent;color:var(--accent-deep);border:1px dashed var(--accent-deep);}
+.row .chev{flex:none;align-self:center;width:16px;height:16px;opacity:.4;}
+.empty-msg{padding:20px 4px;color:var(--text-mute);font-size:0.9rem;}
+
+@media (min-width:860px){
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;}
+  .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 28px;}
+}
+
+/* ---------- important links / chips ---------- */
+.chip-grid{display:grid;grid-template-columns:1fr;gap:8px;}
+@media (min-width:640px){.chip-grid{grid-template-columns:1fr 1fr;}}
+@media (min-width:860px){.chip-grid{grid-template-columns:1fr 1fr 1fr;}}
+.chip{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:13px 14px;font-size:0.88rem;font-weight:500;
+}
+.chip:hover{border-color:var(--accent);}
+.chip .cat{display:block;font-size:0.68rem;color:var(--text-mute);font-weight:500;margin-top:2px;}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:11px 18px;border-radius:8px;font-weight:600;font-size:0.88rem;cursor:pointer;border:1px solid transparent;
+}
+.btn-primary{background:var(--accent);color:#231400;}
+.btn-primary:hover{background:var(--accent-deep);}
+.btn-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
+.btn-outline:hover{background:var(--ink);color:#fff;}
+:root[data-theme="dark"] .btn-outline, .dark-mode-force .btn-outline{border-color:var(--line);color:var(--text);}
+
+/* ---------- job detail ---------- */
+.crumb{font-size:0.8rem;color:var(--text-mute);margin:16px 0 10px;}
+.crumb a:hover{text-decoration:underline;}
+.detail-head{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:18px;}
+.detail-head h1{font-size:1.35rem;margin:0 0 6px;color:var(--ink);}
+.detail-head .org{color:var(--text-mute);font-size:0.95rem;margin:0 0 10px;}
+.detail-head .badges{display:flex;flex-wrap:wrap;gap:8px;}
+.fact-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:20px;}
+@media (min-width:640px){.fact-grid{grid-template-columns:1fr 1fr;}}
+.fact{background:var(--panel);padding:12px 14px;}
+.fact .k{font-size:0.72rem;color:var(--text-mute);font-weight:600;margin-bottom:3px;}
+.fact .v{font-size:0.92rem;font-weight:500;}
+.detail-sub{margin:22px 0;}
+.detail-sub h3{font-size:1rem;color:var(--ink);margin:0 0 10px;border-left:4px solid var(--accent);padding-left:10px;}
+.detail-sub p{margin:0;font-size:0.9rem;color:var(--text);}
+.imp-dates{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.imp-dates td{padding:8px 10px;border-bottom:1px solid var(--line);}
+.imp-dates td:first-child{color:var(--text-mute);}
+.imp-dates td:last-child{text-align:right;font-weight:600;}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;}
+.notice-box{background:var(--closing-bg);color:var(--closing);border-radius:9px;padding:12px 14px;font-size:0.82rem;margin:18px 0;line-height:1.45;}
+
+/* ---------- search page ---------- */
+.search-hero{padding:20px 0;}
+.search-hero form{position:relative;max-width:640px;}
+.search-hero input{
+  width:100%;padding:14px 16px 14px 42px;border-radius:10px;border:1px solid var(--line);background:var(--panel);font-size:1rem;color:var(--text);
+}
+.search-hero svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:19px;height:19px;opacity:.5;}
+.search-group{margin-top:22px;}
+.search-group h3{font-size:0.85rem;color:var(--text-mute);text-transform:none;margin:0 0 8px;font-family:'IBM Plex Sans';font-weight:600;}
+
+/* ---------- static pages ---------- */
+.prose{max-width:66ch;font-size:0.95rem;}
+.prose h2{font-size:1.15rem;color:var(--ink);margin:24px 0 8px;}
+.prose p{margin:0 0 12px;color:var(--text);}
+.prose ul{margin:0 0 12px;padding-left:20px;}
+.contact-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin-top:14px;max-width:420px;}
+.contact-card .row2{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:0.9rem;}
+.contact-card .row2:last-child{border-bottom:none;}
+.contact-card .row2 b{flex:none;width:88px;color:var(--text-mute);font-weight:600;font-size:0.78rem;}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--ink);color:#C9D3DE;margin-top:48px;padding:30px 0 calc(90px + env(safe-area-inset-bottom,0px));}
+@media (min-width:860px){footer.site{padding-bottom:36px;}}
+footer.site .wrap{display:grid;grid-template-columns:1fr;gap:22px;}
+@media (min-width:640px){footer.site .wrap{grid-template-columns:1.3fr 1fr 1fr;}}
+footer.site h4{color:#fff;font-size:0.82rem;margin:0 0 10px;font-family:'IBM Plex Sans';font-weight:600;}
+footer.site a{display:block;font-size:0.83rem;padding:4px 0;color:#B7C2D1;}
+footer.site a:hover{color:#fff;}
+footer.site p{font-size:0.8rem;color:#93A1B4;margin:0 0 10px;max-width:42ch;}
+.foot-bottom{border-top:1px solid #24395A;margin-top:22px;padding-top:16px;font-size:0.74rem;color:#8493A8;}
+.foot-bottom .wrap{display:block;}
+
+/* ---------- mobile bottom nav ---------- */
+.bottom-nav{
+  position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--panel);border-top:1px solid var(--line);
+  display:flex;padding-bottom:env(safe-area-inset-bottom,0px);
+  box-shadow:0 -2px 10px rgba(0,0,0,.06);
+}
+.bottom-nav button{
+  flex:1;background:none;border:none;display:flex;flex-direction:column;align-items:center;gap:3px;
+  padding:8px 2px 7px;color:var(--text-mute);font-size:0.62rem;font-weight:600;cursor:pointer;
+}
+.bottom-nav button svg{width:20px;height:20px;}
+.bottom-nav button.active{color:var(--accent-deep);}
+@media (min-width:860px){.bottom-nav{display:none;} body{--bottomnav:0px;}}
+.bn-spacer{height:66px;}
+@media (min-width:860px){.bn-spacer{display:none;}}
+
+.skip-link{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px;z-index:100;}
+.skip-link:focus{left:8px;top:8px;}
+
+main{min-height:50vh;}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site">
+  <div class="header-row">
+    <button class="brand" id="logoBtn" aria-label="Sarkari Naukri home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="36" height="36" rx="9" fill="#1C3A5E" stroke="#CC8A2C" stroke-width="2"/>
+        <rect x="11" y="10" width="18" height="20" rx="2" fill="#EEF1EC"/>
+        <rect x="14" y="14" width="12" height="2" rx="1" fill="#1C3A5E"/>
+        <rect x="14" y="18" width="12" height="2" rx="1" fill="#1C3A5E"/>
+        <rect x="14" y="22" width="7" height="2" rx="1" fill="#1C3A5E"/>
+        <path d="M22 24.5L24.2 26.7L28.5 21.5" stroke="#CC8A2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="word">Sarkari Naukri<small>Jobs · Results · Admit Cards</small></span>
+    </button>
+
+    <div class="header-search">
+      <form id="headerSearchForm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#9FB0C4" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="headerSearchInput" placeholder="Search jobs, results, admit cards…" aria-label="Search">
+      </form>
+    </div>
+
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="/jobs" data-route="/jobs">Jobs</a>
+      <a href="/results" data-route="/results">Results</a>
+      <a href="/admit-cards" data-route="/admit-cards">Admit cards</a>
+      <a href="/answer-keys" data-route="/answer-keys">Answer keys</a>
+      <div class="nav-more">
+        <button class="navlink" aria-haspopup="true">More ▾</button>
+        <div class="nav-more-panel">
+          <a href="/syllabus">Syllabus</a>
+          <a href="/admissions">Admissions</a>
+          <a href="/important-links">Important links</a>
+          <a href="/about">About us</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-search">
+    <form id="mobileSearchForm">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="mobileSearchInput" placeholder="Search jobs, results, admit cards…" aria-label="Search">
+    </form>
+  </div>
+</header>
+
+<div class="nav-bar"><div class="wrap"></div></div>
+
+<div class="disclaimer-bar" role="note">
+  <div class="wrap">
+    <span class="ico">⚠️</span>
+    <span><strong>Independent information website</strong> — not a government website and not affiliated with, endorsed by, or connected to any government department, PSU or recruitment board. Always verify vacancy details, dates, fees and eligibility on the concerned official website before applying or paying any fee. See our <a href="/about" style="text-decoration:underline;font-weight:600;">About page</a> for details.</span>
+  </div>
+</div>
+
+<div class="ticker" id="tickerBar" role="status" style="display:none;">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span class="msg" id="tickerMsg">Loading updates…</span>
+  </div>
+</div>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<nav class="drawer" id="drawer" aria-label="Menu">
+  <div class="drawer-top">
+    <strong style="font-family:'Roboto Slab';color:var(--ink);">Menu</strong>
+    <button class="close-btn" id="drawerClose" aria-label="Close menu">✕</button>
+  </div>
+  <h3>Browse</h3>
+  <a href="/">Home</a>
+  <a href="/jobs">Latest government jobs</a>
+  <a href="/results">Results</a>
+  <a href="/admit-cards">Admit cards</a>
+  <a href="/answer-keys">Answer keys</a>
+  <a href="/syllabus">Syllabus</a>
+  <a href="/admissions">Admissions</a>
+  <a href="/important-links">Important links</a>
+  <h3>Site</h3>
+  <a href="/search">Search</a>
+  <a href="/about">About us</a>
+  <a href="/contact">Contact</a>
+  <h3>Appearance</h3>
+  <div class="theme-row">
+    <button data-theme-choice="light" id="themeLightBtn">Light</button>
+    <button data-theme-choice="dark" id="themeDarkBtn">Dark</button>
+    <button data-theme-choice="system" id="themeSystemBtn">System</button>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="wrap" id="app"></div>
+</main>
+
+<div class="bn-spacer"></div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Sarkari Naukri</h4>
+      <p>An independent, original listings site for Indian government job openings, results, admit cards and answer keys — built for quick browsing on any phone. This build ships with clearly-marked sample data; see the About page for details.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/jobs">Latest jobs</a>
+      <a href="/results">Results</a>
+      <a href="/admit-cards">Admit cards</a>
+      <a href="/answer-keys">Answer keys</a>
+      <a href="/syllabus">Syllabus</a>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="/important-links">Important links</a>
+      <a href="/admissions">Admissions</a>
+      <a href="/about">About us</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="foot-bottom"><div class="wrap">© <span id="yr"></span> Sarkari Naukri. Independent information website — not a government website. Always verify details on the concerned official website before applying.</div></div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <button data-route="/" aria-label="Home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+    Home
+  </button>
+  <button data-route="/jobs" aria-label="Jobs">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+    Jobs
+  </button>
+  <button data-route="/search" aria-label="Search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    Search
+  </button>
+  <button data-route="/results" aria-label="Results">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg>
+    Results
+  </button>
+  <button data-route="/menu" id="bnMore" aria-label="More">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>
+    More
+  </button>
+</nav>
+
+<div id="toast" style="position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:24px;font-size:0.84rem;opacity:0;pointer-events:none;transition:all .25s ease;z-index:80;max-width:88%;text-align:center;"></div>
+
+<!-- ==================================================================
+     SITE DATA now lives in a separate file, data.json, at the site
+     root — fetched at runtime by the script below. This is what lets
+     the GitHub Actions automation update the live site by committing
+     a new data.json, without ever touching this HTML file.
+
+     data.json's shape (unchanged from before):
+       { meta, categories, jobs[], results[], admitCards[],
+         answerKeys[], syllabus[], admissions[], importantLinks[] }
+     To add a listing by hand, copy an existing object in the matching
+     array and edit its fields — nothing else needs to change.
+     ================================================================== -->
+
+<script>
+/* ==================================================================
+   SARKARI NAUKRI — application code
+   Data is fetched at runtime from data.json (see loadData() near the
+   bottom of this script). Nothing in this section should need to
+   change when you add, edit or remove a listing in that file.
+   ================================================================== */
+let DATA = null;
+
+/* If you host this site in a sub-folder (e.g. a GitHub Pages *project*
+   site at yourname.github.io/repo-name/) set BASE_PATH to "/repo-name".
+   Most free hosts (Netlify, Vercel, Cloudflare Pages, or a GitHub Pages
+   *user* site) serve from the root, where "" is correct. */
+const BASE_PATH = "";
+function withBase(p){ return BASE_PATH + p; }
+
+/* ================= helpers ================= */
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function parseD(s){ const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); }
+function fmtShort(s){ const d=parseD(s); return {day:d.getDate(), mon:MONTHS[d.getMonth()]}; }
+function fmtLong(s){ const d=parseD(s); return d.getDate()+" "+["January","February","March","April","May","June","July","August","September","October","November","December"][d.getMonth()]+" "+d.getFullYear(); }
+function daysUntil(s){ const now=new Date(); now.setHours(0,0,0,0); const d=parseD(s); return Math.round((d-now)/86400000); }
+function jobStatusInfo(job){
+  const du = daysUntil(job.lastDate);
+  if(du < 0) return {cls:"closed", label:"Closed"};
+  if(du <= 7) return {cls:"closing", label:du===0?"Closes today":"Closing soon"};
+  const pu = daysUntil(job.postDate);
+  if(pu >= -3) return {cls:"open", label:"New"};
+  return {cls:"open", label:"Open"};
+}
+function catLabel(slug){ const c = DATA.categories.find(c=>c.slug===slug); return c ? c.label : slug; }
+function esc(s){ return String(s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function svgChevron(){ return '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>'; }
+function sampleTag(item){ return item.sample ? '<span class="tag sample">SAMPLE</span>' : ""; }
+
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.style.opacity='1'; t.style.transform='translateX(-50%) translateY(0)';
+  clearTimeout(toast._h);
+  toast._h=setTimeout(()=>{ t.style.opacity='0'; t.style.transform='translateX(-50%) translateY(20px)'; }, 2400);
+}
+function sampleLinkClick(e){
+  e.preventDefault();
+  toast("This is a placeholder link on sample data — add the real URL in the JSON data block at the top of the file.");
+}
+
+/* ================= SEO: title / description / canonical ================= */
+function setSEO(title, description, routePath){
+  document.title = title;
+  const md = document.getElementById('metaDesc'); if(md) md.setAttribute('content', description);
+  const og = document.getElementById('ogTitle'); if(og) og.setAttribute('content', title);
+  const od = document.getElementById('ogDesc'); if(od) od.setAttribute('content', description);
+  const base = (DATA.meta.baseUrl||"").replace(/\/$/,'');
+  const full = base + withBase(routePath);
+  const canon = document.getElementById('canonicalLink'); if(canon) canon.setAttribute('href', full);
+  const ou = document.getElementById('ogUrl'); if(ou) ou.setAttribute('content', full);
+  const robots = document.getElementById('robotsMeta');
+  if(robots) robots.setAttribute('content', DATA.meta.isLive ? "index, follow" : "noindex, follow");
+}
+
+/* ================= row / list renderers ================= */
+function jobRow(job){
+  const {day,mon}=fmtShort(job.lastDate);
+  const st=jobStatusInfo(job);
+  return `<a class="row" href="${withBase('/job/'+job.id)}">
+    <div class="datebox"><div class="d">${day}</div><div class="m">${mon}</div></div>
+    <div class="body">
+      <p class="title">${esc(job.title)}</p>
+      <p class="org">${esc(job.org)}</p>
+      <div class="meta">
+        <span class="tag ${st.cls}">${st.label}</span>
+        <span class="tag plain">${esc(String(job.vacancies))} ${typeof job.vacancies==="number"?"posts":""}</span>
+        <span class="tag plain">${esc(catLabel(job.category))}</span>
+        ${sampleTag(job)}
+      </div>
+    </div>${svgChevron()}
+  </a>`;
+}
+function simpleRow(item, dateField, extraTag){
+  const {day,mon}=fmtShort(item[dateField]);
+  const href = item.url && item.url.startsWith("#") ? item.url : item.url;
+  const isInternal = href && href.startsWith("/");
+  return `<a class="row" href="${href}" ${isInternal?"":'onclick="sampleLinkClick(event)"'}>
+    <div class="datebox"><div class="d">${day}</div><div class="m">${mon}</div></div>
+    <div class="body">
+      <p class="title">${esc(item.title)}</p>
+      <p class="org">${esc(item.org)}</p>
+      <div class="meta">
+        ${extraTag?`<span class="tag plain">${extraTag(item)}</span>`:""}
+        ${sampleTag(item)}
+      </div>
+    </div>${svgChevron()}
+  </a>`;
+}
+function linkChip(item){
+  return `<a class="chip" href="${item.url}" onclick="sampleLinkClick(event)">
+    <span>${esc(item.title)}<span class="cat">${esc(item.category)}</span></span>
+    ${svgChevron()}
+  </a>`;
+}
+function sectionBlock(heading, rowsHtml, viewAllHref, count){
+  return `<div class="section-block">
+    <div class="section-head">
+      <h2>${heading}<span class="count">${count} listed</span></h2>
+      <a class="view-all" href="${withBase(viewAllHref)}">View all</a>
+    </div>
+    <div class="ledger">${rowsHtml || '<p class="empty-msg">Nothing to show right now.</p>'}</div>
+  </div>`;
+}
+
+/* Generic paginated ("Load more") list page. Re-used by jobs, results,
+   admit cards, answer keys and admissions so every listing page gets
+   pagination for free. */
+function listPage(opts){
+  const { heading, intro, items, rowFn, filterUI, pageSize } = Object.assign({pageSize:10, filterUI:""}, opts);
+  let shown = Math.min(pageSize, items.length);
+  const app = document.getElementById('app');
+  function paint(){
+    const visible = items.slice(0, shown);
+    const remaining = items.length - shown;
+    app.innerHTML = `
+      <div class="hero"><h1>${heading}</h1><p>${intro}</p></div>
+      ${filterUI}
+      <div class="ledger">${visible.map(rowFn).join("") || '<p class="empty-msg">No listings yet — check back soon.</p>'}</div>
+      ${remaining>0
+        ? `<div style="text-align:center;margin:24px 0 6px;"><button type="button" class="btn btn-outline" id="loadMoreBtn">Load more (${remaining} more)</button></div>`
+        : (items.length>pageSize ? `<p class="empty-msg" style="text-align:center;">— End of list —</p>` : "")}
+    `;
+    const btn = document.getElementById('loadMoreBtn');
+    if(btn){ btn.addEventListener('click', ()=>{ shown = Math.min(shown+pageSize, items.length); paint(); }); }
+  }
+  paint();
+}
+
+/* ================= page renderers ================= */
+function renderHome(){
+  const openJobs = DATA.jobs.slice().sort((a,b)=>daysUntil(a.lastDate)-daysUntil(b.lastDate));
+  const topJobs = openJobs.slice(0,5);
+  const topResults = DATA.results.slice(0,4);
+  const topAdmit = DATA.admitCards.slice(0,4);
+  const topKeys = DATA.answerKeys.slice(0,3);
+  const topAdmissions = DATA.admissions.slice(0,3);
+
+  document.getElementById('app').innerHTML = `
+    <div class="hero">
+      <h1>Government jobs, results and admit cards — sorted for you</h1>
+      <p>Track new recruitment notices, exam results and admit card releases from one clean, mobile-friendly board. Updated regularly.</p>
+    </div>
+    <div class="notice-box">This build ships with clearly-marked <strong>SAMPLE</strong> placeholder listings so you can see how the layout works. Replace them with verified information from official sources before publishing real listings — see the <a href="${withBase('/about')}" style="text-decoration:underline;font-weight:600;">About page</a>.</div>
+
+    <div class="grid-2">
+      <div>
+        ${sectionBlock("Latest jobs", topJobs.map(jobRow).join(""), "/jobs", DATA.jobs.length)}
+      </div>
+      <div>
+        ${sectionBlock("Results", topResults.map(r=>simpleRow(r,"date")).join(""), "/results", DATA.results.length)}
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div>
+        ${sectionBlock("Admit cards", topAdmit.map(r=>simpleRow(r,"releaseDate")).join(""), "/admit-cards", DATA.admitCards.length)}
+      </div>
+      <div>
+        ${sectionBlock("Answer keys", topKeys.map(r=>simpleRow(r,"date")).join(""), "/answer-keys", DATA.answerKeys.length)}
+      </div>
+      <div>
+        ${sectionBlock("Admissions", topAdmissions.map(r=>simpleRow(r,"lastDate")).join(""), "/admissions", DATA.admissions.length)}
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="section-head"><h2>Important links</h2><a class="view-all" href="${withBase('/important-links')}">View all</a></div>
+      <div class="chip-grid">${DATA.importantLinks.slice(0,6).map(linkChip).join("")}</div>
+    </div>
+  `;
+}
+
+function jobsFilterUI(activeSlug){
+  const chips = [`<a class="cat-chip ${!activeSlug?'active':''}" href="${withBase('/jobs')}">All <span>(${DATA.jobs.length})</span></a>`]
+    .concat(DATA.categories.map(c=>{
+      const count = DATA.jobs.filter(j=>j.category===c.slug).length;
+      return `<a class="cat-chip ${activeSlug===c.slug?'active':''}" href="${withBase('/jobs/category/'+c.slug)}">${esc(c.label)} <span>(${count})</span></a>`;
+    }));
+  return `<div class="cat-filters" role="tablist" aria-label="Filter jobs by category">${chips.join("")}</div>`;
+}
+function renderJobs(categorySlug){
+  const items = (categorySlug ? DATA.jobs.filter(j=>j.category===categorySlug) : DATA.jobs.slice())
+    .sort((a,b)=>daysUntil(a.lastDate)-daysUntil(b.lastDate));
+  const label = categorySlug ? catLabel(categorySlug) : null;
+  listPage({
+    heading: label ? `${label} jobs` : "Latest government jobs",
+    intro: label
+      ? `Current recruitment notices in the ${label} category, newest deadlines first.`
+      : "All current recruitment notices, newest deadlines first. Use the filters below to narrow by category. Open a listing for full eligibility, fees and important dates.",
+    items, rowFn: jobRow, filterUI: jobsFilterUI(categorySlug)
+  });
+  setSEO(
+    (label ? `${label} Jobs` : "Latest Government Jobs") + " — Sarkari Naukri",
+    label ? `Browse current ${label} government job notifications with deadlines, eligibility and apply links.` : "Browse all current Indian government job notifications by category, with deadlines, eligibility and apply links.",
+    categorySlug ? "/jobs/category/"+categorySlug : "/jobs"
+  );
+}
+function renderResults(){
+  const sorted = DATA.results.slice().sort((a,b)=>parseD(b.date)-parseD(a.date));
+  listPage({ heading:"Results", intro:"Recently declared results, most recent first.", items: sorted, rowFn: r=>simpleRow(r,"date") });
+  setSEO("Results — Sarkari Naukri", "Recently declared Indian government exam and recruitment results.", "/results");
+}
+function renderAdmitCards(){
+  const sorted = DATA.admitCards.slice().sort((a,b)=>parseD(a.examDate)-parseD(b.examDate));
+  listPage({
+    heading:"Admit cards", intro:"Download links for upcoming exam admit cards and call letters.",
+    items: sorted, rowFn: r=>simpleRow(r,"releaseDate",it=>"Exam "+fmtShort(it.examDate).day+" "+fmtShort(it.examDate).mon)
+  });
+  setSEO("Admit Cards — Sarkari Naukri", "Download links for upcoming Indian government exam admit cards and call letters.", "/admit-cards");
+}
+function renderAnswerKeys(){
+  const sorted = DATA.answerKeys.slice().sort((a,b)=>parseD(b.date)-parseD(a.date));
+  listPage({
+    heading:"Answer keys", intro:"Provisional and final answer keys, with objection windows where applicable.",
+    items: sorted, rowFn: r=>simpleRow(r,"date",it=>"Objections till "+fmtShort(it.objectionLast).day+" "+fmtShort(it.objectionLast).mon)
+  });
+  setSEO("Answer Keys — Sarkari Naukri", "Provisional and final answer keys for Indian government recruitment exams, with objection windows.", "/answer-keys");
+}
+function renderSyllabus(){
+  document.getElementById('app').innerHTML = `
+    <div class="hero"><h1>Syllabus</h1><p>Subject-wise syllabus and exam pattern for current recruitment drives.</p></div>
+    <div class="ledger">${DATA.syllabus.map(s=>`<a class="row" href="${s.url}" onclick="sampleLinkClick(event)">
+      <div class="body"><p class="title">${esc(s.title)}</p><p class="org">${esc(s.org)}</p><div class="meta">${sampleTag(s)}</div></div>${svgChevron()}</a>`).join("")}</div>`;
+  setSEO("Syllabus — Sarkari Naukri", "Subject-wise syllabus and exam pattern for current Indian government recruitment drives.", "/syllabus");
+}
+function renderAdmissions(){
+  const sorted = DATA.admissions.slice().sort((a,b)=>daysUntil(a.lastDate)-daysUntil(b.lastDate));
+  listPage({ heading:"Admissions", intro:"Open admission notices for diploma, degree and entrance-test based courses.", items: sorted, rowFn: r=>simpleRow(r,"lastDate") });
+  setSEO("Admissions — Sarkari Naukri", "Open admission notices for diploma, degree and entrance-test based courses in India.", "/admissions");
+}
+function renderImportantLinks(){
+  document.getElementById('app').innerHTML = `
+    <div class="hero"><h1>Important links</h1><p>Quick access to guides and tools that come up again and again during an application.</p></div>
+    <div class="chip-grid">${DATA.importantLinks.map(linkChip).join("")}</div>`;
+  setSEO("Important Links — Sarkari Naukri", "Guides and tools for filling government job applications, checking status and more.", "/important-links");
+}
+
+function renderJobDetail(id){
+  const job = DATA.jobs.find(j=>j.id===id);
+  const app = document.getElementById('app');
+  if(!job){
+    app.innerHTML = `<div class="hero"><h1>Listing not found</h1><p>This job may have been removed. <a href="${withBase('/jobs')}" style="color:var(--accent-deep);font-weight:600;">Browse all jobs</a></p></div>`;
+    setSEO("Listing Not Found — Sarkari Naukri", "This job listing could not be found.", "/job/"+id);
+    return;
+  }
+  const st = jobStatusInfo(job);
+  app.innerHTML = `
+    <p class="crumb"><a href="${withBase('/jobs')}">Jobs</a> &nbsp;/&nbsp; ${esc(catLabel(job.category))}</p>
+    <div class="detail-head">
+      <h1>${esc(job.title)}</h1>
+      <p class="org">${esc(job.org)}</p>
+      <div class="badges">
+        <span class="tag ${st.cls}">${st.label}</span>
+        <span class="tag plain">${esc(String(job.vacancies))} vacancies</span>
+        <span class="tag plain">Apply by ${fmtLong(job.lastDate)}</span>
+        ${sampleTag(job)}
+      </div>
+    </div>
+
+    <div class="fact-grid">
+      <div class="fact"><div class="k">Total vacancies</div><div class="v">${esc(String(job.vacancies))}</div></div>
+      <div class="fact"><div class="k">Application start date</div><div class="v">${fmtLong(job.postDate)}</div></div>
+      <div class="fact"><div class="k">Last date to apply</div><div class="v">${fmtLong(job.lastDate)}</div></div>
+      <div class="fact"><div class="k">Age limit</div><div class="v">${esc(job.ageLimit)}</div></div>
+      <div class="fact"><div class="k">Application fee</div><div class="v">${esc(job.fee)}</div></div>
+      <div class="fact"><div class="k">Salary</div><div class="v">${esc(job.salary)}</div></div>
+    </div>
+
+    <div class="detail-sub">
+      <h3>Eligibility</h3>
+      <p>${esc(job.qualification)}</p>
+    </div>
+
+    <div class="detail-sub">
+      <h3>Selection process</h3>
+      <p>${job.selection.map((s,i)=>(i+1)+". "+esc(s)).join("<br>")}</p>
+    </div>
+
+    <div class="detail-sub">
+      <h3>Important dates</h3>
+      <table class="imp-dates">${job.importantDates.map(([label,date])=>`<tr><td>${esc(label)}</td><td>${fmtLong(date)}</td></tr>`).join("")}</table>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="${job.applyUrl}" onclick="sampleLinkClick(event)">Apply online</a>
+      <a class="btn btn-outline" href="${job.notificationUrl}" onclick="sampleLinkClick(event)">Official notification (PDF)</a>
+    </div>
+    <div class="notice-box">${job.sample ? "This listing is SAMPLE placeholder data for demonstration only — it is not a real vacancy." : "Always cross-check vacancy numbers, dates and eligibility on the concerned official website before applying."}</div>
+  `;
+  setSEO(
+    job.title + " — Sarkari Naukri",
+    `${job.title} at ${job.org}. Vacancies, eligibility, fees, selection process and important dates.`,
+    "/job/"+job.id
+  );
+}
+
+/* ---------- search ---------- */
+function collectSearchable(){
+  return [
+    ...DATA.jobs.map(j=>({type:"Job", title:j.title, sub:j.org, href:withBase("/job/"+j.id)})),
+    ...DATA.results.map(r=>({type:"Result", title:r.title, sub:r.org, href:r.url})),
+    ...DATA.admitCards.map(r=>({type:"Admit card", title:r.title, sub:r.org, href:r.url})),
+    ...DATA.answerKeys.map(r=>({type:"Answer key", title:r.title, sub:r.org, href:r.url})),
+    ...DATA.syllabus.map(r=>({type:"Syllabus", title:r.title, sub:r.org, href:r.url})),
+    ...DATA.admissions.map(r=>({type:"Admission", title:r.title, sub:r.org, href:r.url})),
+  ];
+}
+function renderSearch(query){
+  const app = document.getElementById('app');
+  const all = collectSearchable();
+  const q = (query||"").trim().toLowerCase();
+  const results = q ? all.filter(x=> (x.title+" "+x.sub).toLowerCase().includes(q)) : [];
+  const grouped = {};
+  results.forEach(r=>{ (grouped[r.type]=grouped[r.type]||[]).push(r); });
+
+  let body;
+  if(!q){
+    body = `<p class="empty-msg">Type a post name, department or keyword above to search across jobs, results, admit cards, answer keys, syllabus and admissions.</p>`;
+  } else if(results.length===0){
+    body = `<p class="empty-msg">No matches for “${esc(query)}”. Try a shorter or different keyword.</p>`;
+  } else {
+    body = Object.keys(grouped).map(type=>`
+      <div class="search-group">
+        <h3>${type} (${grouped[type].length})</h3>
+        <div class="ledger">${grouped[type].map(r=>`<a class="row" href="${r.href}" ${r.href.startsWith('/')?'':'onclick="sampleLinkClick(event)"'}>
+          <div class="body"><p class="title">${esc(r.title)}</p><p class="org">${esc(r.sub)}</p></div>${svgChevron()}
+        </a>`).join("")}</div>
+      </div>`).join("");
+  }
+
+  app.innerHTML = `
+    <div class="search-hero">
+      <h1 class="disp" style="font-size:1.4rem;color:var(--ink);margin:0 0 12px;">Search</h1>
+      <form id="searchPageForm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-mute)"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="searchPageInput" placeholder="Try “teacher”, “railway”, “bank”…" value="${esc(query||"")}">
+      </form>
+    </div>
+    ${body}
+  `;
+  document.getElementById('searchPageForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const v=document.getElementById('searchPageInput').value;
+    navigate("/search/"+encodeURIComponent(v));
+  });
+  document.getElementById('searchPageInput').addEventListener('input', e=>{
+    history.replaceState(null,"", withBase("/search/"+encodeURIComponent(e.target.value)));
+    renderSearch(e.target.value);
+  });
+  setSEO("Search — Sarkari Naukri", "Search government job notifications, results, admit cards, answer keys, syllabus and admissions.", "/search"+(query?"/"+encodeURIComponent(query):""));
+}
+
+function renderAbout(){
+  document.getElementById('app').innerHTML = `
+    <div class="hero"><h1>About Sarkari Naukri</h1><p>What this site is, and what it isn't.</p></div>
+    <div class="prose">
+      <h2>What this is</h2>
+      <p>Sarkari Naukri is an independent listings board built to make browsing government job notices, results and admit cards fast and simple on a phone. The layout, name, text and code here are original — this project is not affiliated with, endorsed by, or copied from any existing jobs website or government body.</p>
+      <h2>Independent information only</h2>
+      <p>This is not a government website. It does not accept applications, issue admit cards, or process fees. It links out to what it believes are the relevant official notifications and portals. Always verify vacancy numbers, dates, fees and eligibility on the concerned official website before applying or paying anything.</p>
+      <h2>About the sample data</h2>
+      <p>This build ships with placeholder listings, each clearly marked "SAMPLE", so the site works and looks right out of the box. Every organisation name, vacancy number, date and link in a SAMPLE listing is a bracketed placeholder like "[Add the real organisation name]" — none of it describes a real vacancy. Replace each placeholder with real, verified information (and remove the "sample" flag in the data) before this site is used to inform real applicants.</p>
+      <h2>How listings are organised</h2>
+      <ul>
+        <li>Every job, result, admit card, answer key, syllabus entry and admission notice lives in one JSON data block, kept separate from the page design and code.</li>
+        <li>Adding a new listing means copying one entry in that block and editing its fields — the rest of the site updates on its own.</li>
+        <li>Jobs can be filtered by category: SSC, Railway, Banking, Defence, State Government, Teaching and Other.</li>
+        <li>Status labels such as "New", "Closing soon" and "Closed" are calculated automatically from each listing's dates.</li>
+      </ul>
+      <h2>Get in touch</h2>
+      <p>Spotted an error, or want to suggest a feature? Visit the Contact page.</p>
+    </div>`;
+  setSEO("About Us — Sarkari Naukri", "Sarkari Naukri is an independent, original listings website for Indian government jobs, results and admit cards. Learn what it is and isn't.", "/about");
+}
+function renderContact(){
+  document.getElementById('app').innerHTML = `
+    <div class="hero"><h1>Contact us</h1><p>Questions, corrections or feedback about listings on this site.</p></div>
+    <div class="contact-card">
+      <div class="row2"><b>Email</b><span>${esc(DATA.meta.contactEmail)}</span></div>
+      <div class="row2"><b>Response time</b><span>Within 2–3 working days</span></div>
+      <div class="row2"><b>For</b><span>Corrections, broken links, listing requests</span></div>
+    </div>
+    <div class="prose" style="margin-top:20px;">
+      <p>The email above is a placeholder — replace "contactEmail" in the JSON data block with a real inbox you monitor before this site goes live for real users.</p>
+    </div>`;
+  setSEO("Contact Us — Sarkari Naukri", "Contact Sarkari Naukri with corrections, broken links or listing requests.", "/contact");
+}
+function render404(){
+  document.getElementById('app').innerHTML = `<div class="hero"><h1>Page not found</h1><p>That page doesn't exist. <a href="${withBase('/')}" style="color:var(--accent-deep);font-weight:600;">Go home</a></p></div>`;
+  setSEO("Page Not Found — Sarkari Naukri", "This page could not be found.", "/404");
+}
+
+/* ================= router (clean, path-based URLs) ================= */
+const routeTable = [
+  { pattern:/^\/$/, run:()=>{ renderHome(); setSEO("Sarkari Naukri — Government Jobs, Results & Admit Cards","Independent listings of Indian government job notifications, results, admit cards, answer keys, syllabus and admissions — organised by category, updated regularly.","/"); }, nav:"/" },
+  { pattern:/^\/jobs$/, run:()=>renderJobs(null), nav:"/jobs" },
+  { pattern:/^\/jobs\/category\/([a-z-]+)$/, run:(m)=>renderJobs(m[1]), nav:"/jobs" },
+  { pattern:/^\/job\/([^/]+)$/, run:(m)=>renderJobDetail(decodeURIComponent(m[1])), nav:"/jobs" },
+  { pattern:/^\/results$/, run:renderResults, nav:"/results" },
+  { pattern:/^\/admit-cards$/, run:renderAdmitCards, nav:"/admit-cards" },
+  { pattern:/^\/answer-keys$/, run:renderAnswerKeys, nav:"/answer-keys" },
+  { pattern:/^\/syllabus$/, run:renderSyllabus, nav:"/syllabus" },
+  { pattern:/^\/admissions$/, run:renderAdmissions, nav:"/admissions" },
+  { pattern:/^\/important-links$/, run:renderImportantLinks, nav:"/important-links" },
+  { pattern:/^\/search$/, run:()=>renderSearch(""), nav:"/search" },
+  { pattern:/^\/search\/(.*)$/, run:(m)=>renderSearch(decodeURIComponent(m[1])), nav:"/search" },
+  { pattern:/^\/about$/, run:renderAbout, nav:"/about" },
+  { pattern:/^\/contact$/, run:renderContact, nav:"/contact" },
+];
+
+function currentPath(){
+  let p = location.pathname;
+  if(BASE_PATH && p.startsWith(BASE_PATH)) p = p.slice(BASE_PATH.length) || "/";
+  return p;
+}
+function setActiveNav(navPath){
+  document.querySelectorAll('.desktop-nav a[data-route]').forEach(a=>a.classList.toggle('active', a.dataset.route===navPath));
+  document.querySelectorAll('.bottom-nav button[data-route]').forEach(b=>b.classList.toggle('active', b.dataset.route===navPath));
+}
+function handleRoute(){
+  const path = currentPath();
+  window.scrollTo({top:0, behavior:"instant"});
+  closeDrawer();
+  for(const r of routeTable){
+    const m = path.match(r.pattern);
+    if(m){ r.run(m); setActiveNav(r.nav); updateTicker(); return; }
+  }
+  render404();
+  setActiveNav("");
+}
+function navigate(path){
+  const full = withBase(path);
+  if(location.pathname === full){ handleRoute(); return; }
+  history.pushState(null, "", full);
+  handleRoute();
+}
+window.addEventListener('popstate', handleRoute);
+
+/* Intercept clicks on any same-app link (href starting with "/") so
+   navigation never causes a full page reload. */
+document.addEventListener('click', function(e){
+  const a = e.target.closest('a');
+  if(!a) return;
+  const href = a.getAttribute('href');
+  if(href && href.startsWith('/') && !href.startsWith('//') && a.target!=='_blank'){
+    e.preventDefault();
+    navigate(BASE_PATH && href.startsWith(BASE_PATH) ? href.slice(BASE_PATH.length) : href);
+  }
+});
+
+/* ================= ticker (only ever reflects real, non-sample jobs) ================= */
+function updateTicker(){
+  const soon = DATA.jobs.filter(j=>!j.sample).filter(j=>{ const d=daysUntil(j.lastDate); return d>=0 && d<=7; })
+    .sort((a,b)=>daysUntil(a.lastDate)-daysUntil(b.lastDate));
+  const bar = document.getElementById('tickerBar');
+  if(soon.length===0){ bar.style.display='none'; return; }
+  bar.style.display='block';
+  const parts = soon.slice(0,3).map(j=>{
+    const d = daysUntil(j.lastDate);
+    const when = d===0?"closes today":d===1?"closes tomorrow":`closes in ${d} days`;
+    return `${j.title} (${when})`;
+  });
+  document.getElementById('tickerMsg').textContent = parts.join("  •  ");
+}
+
+/* ================= chrome: search boxes, drawer, theme ================= */
+function goSearch(v){ navigate("/search/"+encodeURIComponent(v)); }
+document.getElementById('headerSearchForm').addEventListener('submit', e=>{ e.preventDefault(); goSearch(document.getElementById('headerSearchInput').value); });
+document.getElementById('mobileSearchForm').addEventListener('submit', e=>{ e.preventDefault(); goSearch(document.getElementById('mobileSearchInput').value); });
+document.getElementById('logoBtn').addEventListener('click', ()=>{ navigate("/"); });
+
+const drawer = document.getElementById('drawer');
+const backdrop = document.getElementById('drawerBackdrop');
+function openDrawer(){ drawer.classList.add('open'); backdrop.classList.add('show'); }
+function closeDrawer(){ drawer.classList.remove('open'); backdrop.classList.remove('show'); }
+document.getElementById('menuBtn').addEventListener('click', openDrawer);
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+
+/* bottom nav routing (buttons, not links) */
+document.querySelectorAll('.bottom-nav button[data-route]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const r = btn.dataset.route;
+    if(r==="/menu"){ openDrawer(); return; }
+    navigate(r);
+  });
+});
+
+/* theme */
+function applyThemeChoice(choice){
+  try{
+    if(choice==="system"){ document.documentElement.removeAttribute('data-theme'); localStorage.removeItem('sn-theme'); }
+    else { document.documentElement.setAttribute('data-theme', choice); localStorage.setItem('sn-theme', choice); }
+  }catch(err){ document.documentElement.setAttribute('data-theme', choice==='system'?'':choice); }
+  updateThemeButtons();
+}
+function updateThemeButtons(){
+  let saved = null;
+  try{ saved = localStorage.getItem('sn-theme'); }catch(err){}
+  const choice = saved || "system";
+  document.getElementById('themeLightBtn').classList.toggle('active', choice==="light");
+  document.getElementById('themeDarkBtn').classList.toggle('active', choice==="dark");
+  document.getElementById('themeSystemBtn').classList.toggle('active', choice==="system");
+}
+document.getElementById('themeLightBtn').addEventListener('click', ()=>applyThemeChoice('light'));
+document.getElementById('themeDarkBtn').addEventListener('click', ()=>applyThemeChoice('dark'));
+document.getElementById('themeSystemBtn').addEventListener('click', ()=>applyThemeChoice('system'));
+(function initTheme(){
+  try{
+    const saved = localStorage.getItem('sn-theme');
+    if(saved){ document.documentElement.setAttribute('data-theme', saved); }
+  }catch(err){}
+  updateThemeButtons();
+})();
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ================= load data.json, then boot the router ================= */
+async function loadData(){
+  try{
+    const res = await fetch(withBase('/data.json'), {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    DATA = await res.json();
+  }catch(err){
+    DATA = {meta:{siteName:"Sarkari Naukri",baseUrl:"",contactEmail:"",isLive:false},
+      categories:[], jobs:[], results:[], admitCards:[], answerKeys:[], syllabus:[], admissions:[], importantLinks:[]};
+    document.getElementById('app').innerHTML = `<div class="hero"><h1>Could not load listings</h1>
+      <p>There was a problem loading this site's data file (data.json). If you're running this locally, data.json must be served from the same folder as index.html — opening the file directly (file://) won't work; use a local server or your live Netlify URL. Technical detail: ${esc(err.message)}</p></div>`;
+  }
+}
+async function boot(){
+  document.getElementById('app').innerHTML = `<div class="hero"><h1>Loading…</h1><p>Fetching the latest listings.</p></div>`;
+  await loadData();
+  if(DATA && DATA.jobs){ handleRoute(); }
+}
+boot();
+</script>
+</body>
+</html>
